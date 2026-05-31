@@ -20,7 +20,7 @@ function App() {
           
           <Route path="/" element={<Pertama />} />
             <Route path="/:nama" element={<Pertama/>} />
-             <Route path="/undangan/:nama" element={<KeduaPages />} />
+             <Route path="/undangan" element={<KeduaPages />} />
 
           
         </Routes>

@@ -1,8 +1,45 @@
 
 import wedding from "../assets/potowedding.png";
 import Nikah from "../assets/Nikah.png";
+import { useState,useEffect } from "react";
 
 export default function HeroWedding() {
+  const targetDate = new Date("2026-07-07T00:00:00").getTime();
+    
+         // Set initial state for the countdown
+         const [timeLeft, setTimeLeft] = useState({
+           days: 0,
+           hours: 0,
+           minutes: 0,
+           seconds: 0
+         });
+       
+         useEffect(() => {
+           const interval = setInterval(() => {
+             const now = new Date().getTime();
+             const distance = targetDate - now;
+       
+             if (distance < 0) {
+               clearInterval(interval);
+               setTimeLeft({
+                 days: 0,
+                 hours: 0,
+                 minutes: 0,
+                 seconds: 0
+               });
+             } else {
+               // Calculate the time remaining
+               setTimeLeft({
+                 days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+                 hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+                 minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+                 seconds: Math.floor((distance % (1000 * 60)) / 1000)
+               });
+             }
+           }, 1000);
+       
+           return () => clearInterval(interval);
+         }, [targetDate]);
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
       
@@ -63,22 +100,86 @@ export default function HeroWedding() {
         >
           ALPI & NDAH
         </h1>
+        <span
+        className="
+          bg-red-600
+          px-3 py-1
+          sm:px-4 sm:py-2
+          text-xs sm:text-sm
+          rounded
+          text-white
+        "
+      >
+        Coming Soon
+      </span>
+   
+  </div>
+  
+  {/* Alamat & Tanggal */}
+      <div
+        className="
+          absolute
+          bottom-36
+          sm:bottom-40
+          md:bottom-44
+          left-1/2
+          -translate-x-1/2
+          z-10
+          text-center
+          text-white
+          px-4
+          w-full
+        "
+      >
+        <div className="w-20 h-px bg-white/50 mx-auto mb-4" />
 
-        {/* Sub Judul */}
         <p
           className="
-            text-white
-            mt-2
-            text-xs
-            sm:text-sm
-            md:text-base
-            max-w-md
-            drop-shadow-md
+            text-sm
+            sm:text-base
+            md:text-lg
+            font-bold
           "
         >
-          Menuju Hari Bahagia
+          Jl. Kp. Halimun RT 003 RW 004
+        </p>
+
+        <p
+          className="
+            mt-2
+            text-lg
+            sm:text-xl
+            md:text-2xl
+            font-semibold
+          "
+        >
+          07 JULI 2026
         </p>
       </div>
+
+       {/* Countdown */}
+  <div className=" absolute
+    bottom-6
+    left-1/2
+    -translate-x-1/2
+    z-10
+    flex
+    gap-2
+    sm:gap-4">
+      
+    <div className=" border hover:bg-red-500 py-2 px-4 mx-2 rounded-xl text-white text-xl font-semibold">
+    {timeLeft.days}<br /> H
+    </div>
+    <div className=" border hover:bg-red-500 py-2 px-4 mx-2 rounded-xl text-white text-xl font-semibold">
+    {timeLeft.hours} <br /> D
+    </div>
+    <div className=" border hover:bg-red-500 py-2 px-4 mx-2 rounded-xl text-white text-xl font-semibold">
+    {timeLeft.minutes} <br /> M
+    </div>
+    <div className=" border  hover:bg-red-500 py-2 px-4 mx-2 rounded-xl text-white text-xl font-semibold">
+    {timeLeft.seconds} <br /> S
+    </div>
+  </div>
     </section>
   );
 }
