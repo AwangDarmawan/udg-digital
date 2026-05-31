@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 // import PertamaPages from "./pages/PertamaPages";
 import 'react-toastify/dist/ReactToastify.css';
 // import KeduaPages from "./pages/KeduaPages";
-import Pertama from "./components/pertama";
+// import Pertama from "./components/pertama";
 // import HeroWedding from "./components/HeroWedding";
 import KeduaPages from "./pages/KeduaPages";
 // import PertamaPages from "./pages/PertamaPages";
