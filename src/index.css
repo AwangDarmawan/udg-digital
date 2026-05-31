@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  overflow-x: hidden;
+}
+
+/* Iphone SE sampai Desktop 4K */
+.responsive-container {
+  width: min(100% - 2rem, 1280px);
+  margin-inline: auto;
+}
