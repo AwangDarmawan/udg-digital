@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/bebas-neue": "^5.2.7",
+    "aos": "^2.3.4",
     "axios": "^1.16.1",
     "lucide-react": "^1.17.0",
     "react": "^19.2.6",

@@ -86,20 +86,58 @@ export default function HeroWedding() {
         />
 
         {/* Judul */}
-        <h1
-          className="
-            text-white
-            font-bold
-            mt-2
-            text-xl
-            sm:text-2xl
-            md:text-4xl
-            lg:text-5xl
-            drop-shadow-lg
-          "
-        >
-          ALPI & NDAH
-        </h1>
+        <div
+  className="
+    mt-2
+    flex
+    flex-cols
+    items-center
+    text-white
+    font-netflix
+    font-bold
+    drop-shadow-lg
+    tracking-wide
+    gap-1
+  "
+>
+  <h1
+    data-aos="fade-right"
+    className="
+      text-2xl
+      sm:text-5xl
+      md:text-6xl
+      lg:text-7xl
+      leading-none
+      text-white
+      -mt-2
+     font-netflix 
+    "
+  >
+    ALPI 
+  </h1>
+  <span data-aos="zoom-in"
+  text-1xl
+      sm:text-4xl
+      md:text-5xl
+      lg:text-6xl> 
+    &
+  </span>
+
+  <h1
+    data-aos="fade-left"
+    className="
+      text-2xl
+      sm:text-5xl
+      md:text-6xl
+      lg:text-7xl
+      text-white
+      leading-none
+      -mt-2
+    "
+  >
+    NDAH
+  </h1>
+</div>
         <span
         className="
           bg-red-600
@@ -108,6 +146,8 @@ export default function HeroWedding() {
           text-xs sm:text-sm
           rounded
           text-white
+          font-netflix
+          
         "
       >
         Coming Soon
@@ -129,11 +169,12 @@ export default function HeroWedding() {
           text-white
           px-4
           w-full
+         
         "
       >
         <div className="w-20 h-px bg-white/50 mx-auto mb-4" />
 
-        <p
+        {/* <p
           className="
             text-sm
             sm:text-base
@@ -142,19 +183,26 @@ export default function HeroWedding() {
           "
         >
           Jl. Kp. Halimun RT 003 RW 004
-        </p>
+        </p> */}
 
-        <p
-          className="
-            mt-2
-            text-lg
-            sm:text-xl
-            md:text-2xl
-            font-semibold
-          "
-        >
-          07 JULI 2026
-        </p>
+       <p 
+       data-aos="flip-right"
+  className="
+    mt-2
+    text-base
+    sm:text-lg
+    md:text-xl
+    lg:text-2xl
+    font-semibold
+    tracking-[0.2em]
+    whitespace-nowrap
+    text-white
+    font-netflix
+    
+  "
+>
+  07 JULI 2026
+</p>
       </div>
 
        {/* Countdown */}
