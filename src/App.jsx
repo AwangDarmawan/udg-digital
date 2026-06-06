@@ -10,7 +10,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import KeduaPages from "./pages/KeduaPages";
 import PertamaPages from "./pages/PertamaPages";
-import Pertama from "./components/cover/Pertama";
 function App() {
   
 
@@ -20,7 +19,7 @@ function App() {
         <Routes>
           
           <Route path="/" element={<PertamaPages />} />
-            <Route path="/:nama" element={<Pertama/>} />
+            <Route path="/:nama" element={<PertamaPages/>} />
              <Route path="/undangan" element={<KeduaPages />} />
 
           
