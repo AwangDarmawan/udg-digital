@@ -5,7 +5,7 @@ export default function ProfileCard({
   return (
     <button className="group flex flex-col items-center">
 
-      <div
+      <div  data-aos="fade-up-right"
         className={`
           bg-gradient-to-b ${gradient}
           rounded-2xl
@@ -51,47 +51,3 @@ export default function ProfileCard({
     </button>
   );
 }
-// export default function ProfileCard({
-//   name,
-//   image,
-// }) {
-//   return (
-//     <button className="group flex flex-col items-center">
-
-//       <div
-//         className="
-//           overflow-hidden
-//           rounded-2xl
-//           border-2 border-transparent
-//           transition-all duration-300
-
-//           w-[120px]
-//           h-[120px]
-
-//           sm:w-[160px]
-//           sm:h-[160px]
-
-//           md:w-[220px]
-//           md:h-[220px]
-
-//           lg:w-[260px]
-//           lg:h-[260px]
-
-//           group-hover:border-white
-//           group-hover:scale-105
-//         "
-//       >
-//         <img
-//           src={image}
-//           alt={name}
-//           className="w-full h-full object-cover"
-//         />
-//       </div>
-
-//       <span className="mt-3 md:mt-5 text-base md:text-xl text-zinc-300 group-hover:text-white">
-//         {name}
-//       </span>
-
-//     </button>
-//   );
-// }

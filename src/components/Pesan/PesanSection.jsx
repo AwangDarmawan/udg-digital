@@ -1,0 +1,130 @@
+import PesanForm from "./PesanForm";
+import PesanCard from "./PesanCard";
+
+import Poto1 from "../../assets/1.png";
+import { useEffect, useState } from "react";
+import { GetPesan } from "../../services/Api";
+
+
+function PesanSection() {
+    const [datas, setDatas] = useState([]);
+ 
+  async function fetchPesan() {
+    try {
+      
+
+      const result = await GetPesan();
+     console.log("resul1",result)
+      setDatas(result);
+      console.log("resul2",result)
+    } catch (error) {
+      console.error(error.message);
+    } 
+  }
+   useEffect(() => {
+    fetchPesan();
+  }, []);
+  return (
+    <section
+      className="
+        w-full
+        py-12 px-4
+      "
+    >
+         <div className="mx-auto max-w-6xl">
+      <h2  data-aos="zoom-in" className="text-5xl md:text-5xl font-bold mb-10 font-netflix text-white" >
+         GALLERY 
+        </h2>
+      <div
+        className="
+          mx-auto
+          w-full
+          max-w-md
+          overflow-hidden
+          rounded-[24px]
+          bg-white
+          shadow-xl
+
+          sm:max-w-lg
+          md:max-w-2xl
+          lg:max-w-3xl
+          xl:max-w-4xl
+        "
+      >
+        {/* Cover */}
+        <div
+          className="
+            aspect-[4/3]
+            w-full
+            overflow-hidden
+          "
+        >
+          <img
+            src={Poto1}
+            alt="Wedding"
+            className="
+              h-full
+              w-full
+              object-cover
+            "
+          />
+        </div>
+
+        {/* Content */}
+        <div
+          className="
+            p-5
+
+            md:p-8
+            lg:p-10
+          "
+        >
+          <h2
+            className="
+              text-center
+              italic
+              text-2xl
+              md:text-3xl
+              text-stone-700
+              font-playfair
+            "
+          >
+            Berikan Ucapan & Doa
+          </h2>
+
+          <p
+            className="
+              mt-4
+              mb-6
+              text-lg
+              text-stone-500
+              font-playfair
+              font-bold
+            "
+          >
+            {datas.length} Comments
+          </p>
+
+          <PesanForm />
+
+          <div
+            className="
+              mt-8
+              space-y-6
+            "
+          >
+             {datas.map((item) => (
+              <PesanCard
+                key={item.id}
+                item={item}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  );
+}
+
+export default PesanSection;

@@ -1,9 +1,9 @@
-import logonikah from "../assets/Nikah.png";
+import NikahFlix from "../../assets/NikahFlix.png";
 
 export default function LogoNikah() {
   return (
     <img
-      src={logonikah}
+      src={NikahFlix}
       alt="NikahFlix"
       className="
         w-[180px]

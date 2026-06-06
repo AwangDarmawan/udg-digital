@@ -1,9 +1,12 @@
-import LogoNikah from "../components/LogoNikah";
-import ProfileCard from "./ProfileCard";
+import LogoNikah from "../DataKhusus/LogoNikah";
+import ProfileCard from "../DataKhusus/ProfileCard";
 import { Link, useParams } from 'react-router-dom';
+import { useState } from "react";
+import { Mail, MailOpen } from "lucide-react";
 
 function Pertama() {
   const { nama } = useParams();
+    const [hover, setHover] = useState(false);
   return (
     <>
          <main className="min-h-screen bg-black text-white overflow-hidden">
@@ -20,12 +23,12 @@ function Pertama() {
           </div>
 
           {/* Title */}
-          <h2 className="text-center text-lg sm:text-xl md:text-2xl text-zinc-200 mb-8 md:mb-12">
+          <h2 className="text-center text-lg sm:text-xl md:text-2xl text-zinc-200 mb-8 md:mb-12  font-playfair">
             Who's watching?
           </h2>
 
           {/* Profiles */}
-          <div className="grid grid-cols-2 gap-4 sm:gap-8 md:gap-12 place-items-center">
+          <div className="grid grid-cols-2 gap-4 sm:gap-8 md:gap-12 place-items-center  text-white font-netflix">
 
             <ProfileCard
               name="ALPI RAHMAN"
@@ -45,7 +48,7 @@ function Pertama() {
               Kepada Yth.
             </p>
 
-            <h3 className="text-red-600 font-bold text-2xl sm:text-3xl md:text-4xl">
+            <h3 data-aos="fade-down" className="text-red-600 font-bold text-2xl sm:text-3xl md:text-4xl">
               {nama}
             </h3>
           </div>
@@ -54,7 +57,10 @@ function Pertama() {
            
           <div className="flex justify-center mt-10 md:mt-14">
             <Link to="/undangan">
-            <button
+            <button 
+            onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)} 
+             data-aos="fade-up"
               className="
                 px-6 py-3
                 md:px-10 md:py-4
@@ -63,11 +69,17 @@ function Pertama() {
                 tracking-wider
                 text-sm md:text-base
                 transition-all duration-300
-                hover:bg-white
-                hover:text-black
+                hover:bg-red-600
+                hover:text-white
+                shadow-lg
+                  flex
+    items-center
+    gap-2
+                  
               "
             >
-              Buka Undangan
+           {hover ? <MailOpen size={18} /> : <Mail size={18} />}
+              BUKA UNDANGAN
             </button>
              </Link>
           </div>

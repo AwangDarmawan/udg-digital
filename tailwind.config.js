@@ -13,6 +13,7 @@ export default {
         "Montserrat" : ['Montserrat'],
         "Allura" : ['Allura'],
          netflix: ['"Bebas Neue"', 'sans-serif'],
+          playfair: ["Playfair Display", "serif"],
       },
       colors : {
         "putih" : "#FFFFFF",

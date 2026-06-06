@@ -1,51 +1,18 @@
 
-import wedding from "../assets/potowedding.png";
-import Nikah from "../assets/Nikah.png";
-import { useState,useEffect } from "react";
+import Berdua from "../../assets/PotoBerdua.png";
+// import NikahFlix from "../../assets/NikahFlix.png";
+
+import LogoNikah from "../DataKhusus/LogoNikah";
+import Waktu from "./Waktu";
 
 export default function HeroWedding() {
-  const targetDate = new Date("2026-07-07T00:00:00").getTime();
-    
-         // Set initial state for the countdown
-         const [timeLeft, setTimeLeft] = useState({
-           days: 0,
-           hours: 0,
-           minutes: 0,
-           seconds: 0
-         });
-       
-         useEffect(() => {
-           const interval = setInterval(() => {
-             const now = new Date().getTime();
-             const distance = targetDate - now;
-       
-             if (distance < 0) {
-               clearInterval(interval);
-               setTimeLeft({
-                 days: 0,
-                 hours: 0,
-                 minutes: 0,
-                 seconds: 0
-               });
-             } else {
-               // Calculate the time remaining
-               setTimeLeft({
-                 days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-                 hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-                 minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-                 seconds: Math.floor((distance % (1000 * 60)) / 1000)
-               });
-             }
-           }, 1000);
-       
-           return () => clearInterval(interval);
-         }, [targetDate]);
+
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
       
       {/* Background */}
       <img
-        src={wedding}
+        src={Berdua}
         alt="Wedding"
         className="absolute inset-0 w-full h-full object-cover"
       />
@@ -73,8 +40,8 @@ export default function HeroWedding() {
         "
       >
         {/* Logo Nikahflix */}
-        <img
-          src={Nikah}
+        {/* <img
+          src={NikahFlix}
           alt="Nikahflix"
           className="
             w-32
@@ -83,7 +50,8 @@ export default function HeroWedding() {
             lg:w-72
             xl:w-80
           "
-        />
+        /> */}
+        <LogoNikah/>
 
         {/* Judul */}
         <div
@@ -93,7 +61,7 @@ export default function HeroWedding() {
     flex-cols
     items-center
     text-white
-    font-netflix
+    font-playfair
     font-bold
     drop-shadow-lg
     tracking-wide
@@ -110,16 +78,17 @@ export default function HeroWedding() {
       leading-none
       text-white
       -mt-2
-     font-netflix 
+     font-playfair
     "
   >
     ALPI 
   </h1>
   <span data-aos="zoom-in"
-  text-1xl
+  className="text-2xl
       sm:text-4xl
       md:text-5xl
-      lg:text-6xl> 
+      lg:text-6xl font-playfair"
+  > 
     &
   </span>
 
@@ -133,6 +102,7 @@ export default function HeroWedding() {
       text-white
       leading-none
       -mt-2
+      font-playfair
     "
   >
     NDAH
@@ -197,15 +167,15 @@ export default function HeroWedding() {
     tracking-[0.2em]
     whitespace-nowrap
     text-white
-    font-netflix
+   font-playfair
     
   "
 >
-  07 JULI 2026
+  05 Juli 2026
 </p>
       </div>
 
-       {/* Countdown */}
+       {/* Countdown
   <div className=" absolute
     bottom-6
     left-1/2
@@ -215,19 +185,38 @@ export default function HeroWedding() {
     gap-2
     sm:gap-4">
       
-    <div className=" border hover:bg-red-500 py-2 px-4 mx-2 rounded-xl text-white text-xl font-semibold">
+    <div className="   font-playfair border hover:bg-red-500 py-2 px-4 mx-2 rounded-xl text-white text-xl font-semibold">
     {timeLeft.days}<br /> H
     </div>
-    <div className=" border hover:bg-red-500 py-2 px-4 mx-2 rounded-xl text-white text-xl font-semibold">
+    <div className="   font-playfair border hover:bg-red-500 py-2 px-4 mx-2 rounded-xl text-white text-xl font-semibold">
     {timeLeft.hours} <br /> D
     </div>
-    <div className=" border hover:bg-red-500 py-2 px-4 mx-2 rounded-xl text-white text-xl font-semibold">
+    <div className="   font-playfair border hover:bg-red-500 py-2 px-4 mx-2 rounded-xl text-white text-xl font-semibold">
     {timeLeft.minutes} <br /> M
     </div>
-    <div className=" border  hover:bg-red-500 py-2 px-4 mx-2 rounded-xl text-white text-xl font-semibold">
+    <div className="   font-playfair border  hover:bg-red-500 py-2 px-4 mx-2 rounded-xl text-white text-xl font-semibold">
     {timeLeft.seconds} <br /> S
     </div>
-  </div>
+  </div> */}
+    {/* Countdown */}
+        <div className=" absolute
+    bottom-6
+    sm:bottom-8
+    md:bottom-10
+
+    left-1/2
+    -translate-x-1/2
+
+    z-10
+    w-full
+    max-w-xs
+
+    sm:max-w-md
+    md:max-w-lg
+
+    px-4">
+          <Waktu />
+        </div>
     </section>
   );
 }

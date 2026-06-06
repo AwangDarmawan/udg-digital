@@ -3,13 +3,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-// import PertamaPages from "./pages/PertamaPages";
+
 import 'react-toastify/dist/ReactToastify.css';
-// import KeduaPages from "./pages/KeduaPages";
-import Pertama from "./components/Pertama";
-// import HeroWedding from "./components/HeroWedding";
+
+
+
 import KeduaPages from "./pages/KeduaPages";
-// import PertamaPages from "./pages/PertamaPages";
+import PertamaPages from "./pages/PertamaPages";
+import Pertama from "./components/cover/Pertama";
 function App() {
   
 
@@ -18,7 +19,7 @@ function App() {
        <BrowserRouter>
         <Routes>
           
-          <Route path="/" element={<Pertama />} />
+          <Route path="/" element={<PertamaPages />} />
             <Route path="/:nama" element={<Pertama/>} />
              <Route path="/undangan" element={<KeduaPages />} />
 

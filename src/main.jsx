@@ -5,6 +5,7 @@ import App from './App.jsx'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "@fontsource/bebas-neue";
+import "@fontsource/playfair-display";
 
 AOS.init({
   duration: 1000,
