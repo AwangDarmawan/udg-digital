@@ -14,7 +14,7 @@ export default function PotoBerdua() {
         >
           <img
             src={poto2}
-            alt="Erika dan Randi"
+            alt="Alpi Dan Ndan"
             className="
               absolute
               inset-0

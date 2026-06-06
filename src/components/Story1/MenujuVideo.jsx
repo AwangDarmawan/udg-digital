@@ -22,7 +22,7 @@ export default function MenujuVideo() {
       >
         <img
           src="/cover.jpg"
-          alt="Alpi dan Ndah"
+          alt="VIDEO BELUM DI UPLOAD"
           className="
             h-full
             w-full

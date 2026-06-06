@@ -48,13 +48,15 @@
 //   );
 // }
 
+import StorySection from "../Story2/StorySection";
 import MenujuButton from "./MenujuButton";
 import MenujuQuote from "./MenujuQuote";
 import MenujuVideo from "./MenujuVideo";
 export default function HariH() {
   return (
-    <section className="min-h-screen bg-black text-white">
-      <div className="mx-auto max-w-7xl px-4 py-6 md:px-8 lg:px-12">
+    <section className="min-h-screen bg-black text-white py-16 px-4 md:px-8 lg:px-12">
+      <div className="mx-auto max-w-7xl">
+        
         
         <h2
           data-aos="zoom-in"
@@ -74,7 +76,7 @@ export default function HariH() {
           "
         >
           {/* Video */}
-          <div data-aos="fade-down" className="w-full md:w-[45%]">
+          <div  className="w-full md:w-[45%]">
             <MenujuVideo />
           </div>
 
@@ -100,7 +102,8 @@ export default function HariH() {
             <MenujuQuote />
           </div>
         </div>
-
+       {/* //StorySection */}
+       <StorySection/>
       </div>
     </section>
   );

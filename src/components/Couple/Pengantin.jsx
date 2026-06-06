@@ -32,7 +32,7 @@ function Pengantin() {
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <h2  data-aos="zoom-in" className="text-5xl md:text-5xl font-bold mb-10 font-netflix" >
-          BRIDE & GROOM
+          COUPLE
         </h2>
 
         {/* Cards */}

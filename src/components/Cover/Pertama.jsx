@@ -1,12 +1,15 @@
 import LogoNikah from "../DataKhusus/LogoNikah";
 import ProfileCard from "../DataKhusus/ProfileCard";
-import { Link, useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
 import { useState } from "react";
 import { Mail, MailOpen } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 function Pertama() {
+   const navigate = useNavigate();
   const { nama } = useParams();
     const [hover, setHover] = useState(false);
+    
   return (
     <>
          <main className="min-h-screen bg-black text-white overflow-hidden">
@@ -56,8 +59,12 @@ function Pertama() {
           {/* CTA */}
            
           <div className="flex justify-center mt-10 md:mt-14">
-            <Link to="/undangan">
-            <button 
+           
+            <button
+              onClick={() => {
+        localStorage.setItem("playMusic", "true");
+        navigate("/undangan");
+         }} 
             onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)} 
              data-aos="fade-up"
@@ -72,16 +79,16 @@ function Pertama() {
                 hover:bg-red-600
                 hover:text-white
                 shadow-lg
-                  flex
-    items-center
-    gap-2
+                flex
+               items-center
+               gap-2
                   
               "
             >
            {hover ? <MailOpen size={18} /> : <Mail size={18} />}
               BUKA UNDANGAN
             </button>
-             </Link>
+           
           </div>
 
         </div>

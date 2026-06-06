@@ -14,7 +14,7 @@ export default function AkadSection() {
       "
     >
         {/* Story */}
-        
+         <div className="max-w-6xl mx-auto">
         <h2  data-aos="zoom-in" className=" text-white relative text-5xl md:text-5xl font-bold mb-10 font-netflix" >
          TIME LOCATION
         </h2>
@@ -32,7 +32,7 @@ export default function AkadSection() {
           className="
             rounded-xl
             border
-            border-zinc-800
+            border-white
             overflow-hidden
           "
         >
@@ -49,7 +49,7 @@ export default function AkadSection() {
           className="
             rounded-xl
             border
-            border-zinc-800
+             border-white
             overflow-hidden
           "
         >
@@ -61,6 +61,7 @@ export default function AkadSection() {
             mapsLink="https://www.google.com/maps?q=-6.7095556,107.2343388&z=17&hl=id"
           />
         </div>
+      </div>
       </div>
     </section>
   );

@@ -25,8 +25,8 @@ export default function Akad({
       "
     >
       {/* Decoration */}
-      <div className="absolute inset-0 opacity-10 text-red-600">
-  <Clapperboard className="absolute top-8 left-8 w-10 h-10 " />
+      <div className="absolute inset-0 opacity-10   text-red-600 ">
+  <Clapperboard className="absolute top-8 left-8 w-10 h-10  " />
   <Clapperboard className="absolute top-8 right-8 w-10 h-10" />
   <Clapperboard className="absolute bottom-8 left-8 w-10 h-10" />
   <Clapperboard className="absolute bottom-8 right-8 w-10 h-10" />

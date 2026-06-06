@@ -33,7 +33,7 @@ function PesanSection() {
     >
          <div className="mx-auto max-w-6xl">
       <h2  data-aos="zoom-in" className="text-5xl md:text-5xl font-bold mb-10 font-netflix text-white" >
-         GALLERY 
+         RSVP
         </h2>
       <div
         className="
@@ -102,7 +102,7 @@ function PesanSection() {
               font-bold
             "
           >
-            {datas.length} Comments
+            {datas.length} Komentar
           </p>
 
           <PesanForm />
