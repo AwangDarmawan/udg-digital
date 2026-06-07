@@ -76,7 +76,8 @@ function Pertama() {
                 tracking-wider
                 text-sm md:text-base
                 transition-all duration-300
-                hover:bg-red-600
+                bg-red-600
+                hover:bg-red-700
                 hover:text-white
                 shadow-lg
                 flex
