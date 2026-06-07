@@ -7,13 +7,15 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background: #000;
-  overflow-x: hidden;
+  background: #000000;
 }
 
 /* Iphone SE sampai Desktop 4K */
-.responsive-container {
+/* .responsive-container {
   width: min(100% - 2rem, 1280px);
   margin-inline: auto;
+} */
+#root {
+  overflow-x: hidden;
+  width: 100%;
 }

@@ -39,22 +39,11 @@ useEffect(() => {
       <AkadSection/>
 
       <Gallery/>
-      {/* <main
-      className="
-        min-h-screen
-        
-        px-4
-        py-10
-
-        md:px-6
-        lg:px-8
-      "
-    >
-      <PesanSection /> */}
+      <PesanSection />
       <GiftSection/>
 
       <Footer/>
-    {/* </main> */}
+  
     <button
   onClick={() => {
     if (audioRef.current.paused) {
@@ -65,24 +54,47 @@ useEffect(() => {
       setIsPlaying(false);
     }
   }}
+  // className="
+  //   fixed
+  //   bottom-5
+  //   right-5
+  //   z-50
+  //   w-12
+  //   h-12
+  //   rounded-full
+   
+  //   border
+  //  border-red-600 
+  //  bg-red-600
+  //   text-white
+  //   flex
+  //   items-center
+  //   justify-center
+  //    shadow-[0_4px_15px_rgba(62,92,147,0.5)]
+  // "
+
+
+  
+
+
   className="
-    fixed
-    bottom-5
+     fixed
+    bottom-6
     right-5
     z-50
     w-12
     h-12
     rounded-full
-   
     border
-   border-red-600 
-   bg-red-600
-    text-white
+  border-red-600
+  bg-red-600
+  text-white
     flex
     items-center
     justify-center
-     shadow-[0_4px_15px_rgba(62,92,147,0.5)]
-  "
+      shadow-[0_4px_15px_rgba(62,92,147,0.5)]
+    
+"
 >
   {isPlaying ? (
      <Volume2 size={22} />

@@ -54,7 +54,7 @@ function Navigation() {
   ];
 
   return (
-    <div className="w-full px-2 py-8 ">
+    <div className="w-full px-2 py-8  bg-black">
       <div className="max-w-4xl mx-auto">
         <div className="grid grid-cols-4 gap-2">
           {menus.map((menu) => (

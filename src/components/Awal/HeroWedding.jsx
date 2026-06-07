@@ -79,6 +79,7 @@ export default function HeroWedding() {
       text-white
       -mt-2
      font-playfair
+    
     "
   >
     ALPI 
