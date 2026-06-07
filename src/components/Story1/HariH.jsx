@@ -55,7 +55,7 @@ import MenujuVideo from "./MenujuVideo";
 export default function HariH() {
   return (
     <section className="min-h-screen bg-black text-white py-16 px-4 md:px-8 lg:px-12">
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-6xl">
         
         
         <h2

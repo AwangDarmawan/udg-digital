@@ -39,7 +39,7 @@ useEffect(() => {
       <AkadSection/>
 
       <Gallery/>
-      <main
+      {/* <main
       className="
         min-h-screen
         
@@ -50,11 +50,11 @@ useEffect(() => {
         lg:px-8
       "
     >
-      <PesanSection />
+      <PesanSection /> */}
       <GiftSection/>
 
       <Footer/>
-    </main>
+    {/* </main> */}
     <button
   onClick={() => {
     if (audioRef.current.paused) {

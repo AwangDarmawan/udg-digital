@@ -81,8 +81,7 @@ function PesanSection() {
         >
           <h2
             className="
-              text-center
-              italic
+              text-center   
               text-2xl
               md:text-3xl
               text-stone-700
