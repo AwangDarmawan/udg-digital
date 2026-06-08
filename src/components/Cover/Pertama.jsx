@@ -57,8 +57,58 @@ function Pertama() {
           </div>
 
           {/* CTA */}
-           
+
           <div className="flex justify-center mt-10 md:mt-14">
+  <button
+    onClick={() => {
+      localStorage.setItem("playMusic", "true");
+      // navigate("/undangan");
+      navigate("/intro");
+    }}
+    onMouseEnter={() => setHover(true)}
+    onMouseLeave={() => setHover(false)}
+    data-aos="fade-up"
+    className="
+      px-6 py-3
+      sm:px-8 sm:py-4
+      md:px-10 md:py-4
+      lg:px-12 lg:py-5
+
+      border border-zinc-500
+      bg-red-600
+      hover:bg-red-700
+      hover:text-white
+
+      uppercase
+      tracking-wider
+      font-netflix
+
+      text-base
+      sm:text-lg
+      md:text-xl
+      lg:text-2xl
+
+      flex
+      items-center
+      gap-2
+      sm:gap-3
+
+      shadow-lg
+      transition-all
+      duration-300
+    "
+  >
+    {hover ? (
+      <MailOpen className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7" />
+    ) : (
+      <Mail className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7" />
+    )}
+
+    BUKA UNDANGAN
+  </button>
+</div>
+           
+          {/* <div className="flex justify-center mt-10 md:mt-14">
            
             <button
               onClick={() => {
@@ -74,7 +124,7 @@ function Pertama() {
                 border border-zinc-500
                 uppercase
                 tracking-wider
-                text-sm md:text-base
+                text-lg md:text-base
                 transition-all duration-300
                 bg-red-600
                 hover:bg-red-700
@@ -83,6 +133,8 @@ function Pertama() {
                 flex
                items-center
                gap-2
+               font-netflix
+               
                   
               "
             >
@@ -90,7 +142,7 @@ function Pertama() {
               BUKA UNDANGAN
             </button>
            
-          </div>
+          </div> */}
 
         </div>
       </section>
@@ -100,79 +152,3 @@ function Pertama() {
 }
 
 export default Pertama
-// import LogoNikah from "../components/LogoNikah";
-// import ProfileCard from "./Profile";
-// import { Link, useParams } from 'react-router-dom';
-// import Alpi from "../assets/Alpi.png";
-// import Ndah from "../assets/Ndah.png";
-
-// function Pertama() {
-//     const { nama } = useParams();
-//   return (
-//     <main className="min-h-screen bg-black text-white overflow-hidden">
-//       <section className="relative flex min-h-screen flex-col items-center justify-center px-4 sm:px-6">
-
-//         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.04),transparent_60%)]" />
-
-//         <div className="relative z-10 w-full max-w-5xl">
-
-//           <div className="flex justify-center mb-8 md:mb-12">
-//             <LogoNikah />
-//           </div>
-
-//           <h2 className="text-center text-lg sm:text-xl md:text-2xl text-zinc-200 mb-8 md:mb-12">
-//             Who's watching?
-//           </h2>
-
-//           <div className="grid grid-cols-2 gap-4 sm:gap-8 md:gap-12 place-items-center">
-
-//             <ProfileCard
-//               name="ALPI RAHMAN"
-//               image={Alpi}
-//             />
-
-//             <ProfileCard
-//               name="SITI SA'ADAH"
-//               image={Ndah}
-//             />
-
-//           </div>
-
-//          {/* Guest */}
-//           <div className="text-center mt-12 md:mt-16">
-//             <h3 className="text-zinc-400 text-sm sm:text-base">
-//               Kepada Yth.
-//             </h3>
-
-//             <h3 className="text-red-600 font-bold text-2xl sm:text-3xl md:text-4xl">
-//               {nama}
-//             </h3>
-//           </div>
-
-//           {/* CTA */}
-//           <Link to="/undangan">
-//           <div className="flex justify-center mt-10 md:mt-14">
-//             <button
-//               className="
-//                 px-6 py-3
-//                 md:px-10 md:py-4
-//                 border border-zinc-500
-//                 uppercase
-//                 tracking-wider
-//                 text-sm md:text-base
-//                 transition-all duration-300
-//                 hover:bg-white
-//                 hover:text-black
-//               "
-//             >
-//               Buka Undangan
-//             </button>
-//           </div>
-//           </Link>
-//         </div>
-//       </section>
-//     </main>
-//   );
-// }
-
-// export default Pertama;

@@ -9,7 +9,9 @@ export default function GiftSection() {
   };
 
   return (
-    <section className="w-full px-4 py-16">
+    <section 
+    id="gift"
+    className="w-full px-4 py-16">
       {/* <div className="mx-auto max-w-6xl"> */}
         {/* Title */}
         {/* <h2

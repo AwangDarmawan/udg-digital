@@ -7,10 +7,16 @@ import "aos/dist/aos.css";
 import "@fontsource/bebas-neue";
 import "@fontsource/playfair-display";
 
+// AOS.init({
+//   duration: 1000,
+//   once: true,
+//     offset: 50,
+// });
 AOS.init({
-  duration: 1000,
+  duration: 1200,
+  easing: "ease-out-cubic",
   once: true,
-    offset: 50,
+  offset: 80,
 });
 
 createRoot(document.getElementById('root')).render(

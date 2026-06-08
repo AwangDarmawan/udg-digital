@@ -9,7 +9,7 @@ export default function Gallery() {
   ];
 
   return (
-    <section className="py-12 px-4">
+    <section id="gallery" className="py-12 px-4">
       <div className="mx-auto max-w-6xl">
       {/* <h2  data-aos="zoom-in" className="text-5xl md:text-5xl font-bold mb-10 font-netflix text-white" >
          GALLERY 

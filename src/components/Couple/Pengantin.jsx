@@ -26,14 +26,9 @@ function Pengantin() {
 
   return (
     <section
-      id="pengantin"
+      id="couple"
       className="bg-black text-white py-12 px-4 sm:px-6 lg:px-8"
     >
-      {/* <div className="max-w-6xl mx-auto"> */}
-        {/* Heading */}
-        {/* <h2  data-aos="zoom-in" className="text-5xl md:text-5xl font-bold mb-10 font-netflix" >
-          COUPLE
-        </h2> */}
 
          <div className="mx-auto max-w-6xl">
         

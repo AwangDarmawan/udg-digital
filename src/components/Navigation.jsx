@@ -1,12 +1,12 @@
 import {
-  House,
+   Users,
   Heart,
   BookOpen,
   CalendarDays,
   Image,
   Mail,
   Gift,
-  MessageCircle,
+  Home,
 } from "lucide-react";
 
 function Navigation() {
@@ -14,8 +14,9 @@ function Navigation() {
     {
       label: "Home",
       href: "#home",
-      icon: <House className="w-5 h-5 sm:w-6 sm:h-6" />,
+      icon: <Home className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
+    
     {
       label: "Couple",
       href: "#couple",
@@ -27,10 +28,11 @@ function Navigation() {
       icon: <BookOpen className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
     {
-      label: "Event",
-      href: "#event",
+      label: "Time",
+      href: "#time",
       icon: <CalendarDays className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
+    
     {
       label: "Gallery",
       href: "#gallery",
@@ -46,10 +48,11 @@ function Navigation() {
       href: "#gift",
       icon: <Gift className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
+    
     {
-      label: "Wish",
-      href: "#wish",
-      icon: <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />,
+      label: "Family",
+      href: "#family",
+      icon: <Users className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
   ];
 

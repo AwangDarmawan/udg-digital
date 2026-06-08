@@ -3,8 +3,8 @@ export default function StoryCard({ image, title, title2,date, description }) {
     <article
       className="
         rounded-3xl
-        border
-        border-slate-200
+       
+       
         bg-tranparent
         shadow-md
         overflow-hidden

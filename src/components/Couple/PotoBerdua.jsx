@@ -1,7 +1,7 @@
 import poto2 from "../../assets/PotoBerdua.png"
 export default function PotoBerdua() {
   return (
-    <section className="bg-black py-10">
+    <section   className="bg-black py-10">
       <div className="mx-auto max-w-5xl px-5">
         <div
           className="

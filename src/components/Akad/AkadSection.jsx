@@ -3,6 +3,7 @@ import Akad from "./Akad";
 export default function AkadSection() {
   return (
     <section
+     id="time"
       className="
         relative
         min-h-screen
