@@ -10,9 +10,9 @@ export default function GiftSection() {
 
   return (
     <section className="w-full px-4 py-16">
-      <div className="mx-auto max-w-6xl">
+      {/* <div className="mx-auto max-w-6xl"> */}
         {/* Title */}
-        <h2
+        {/* <h2
           data-aos="zoom-in"
           className="
             mb-10
@@ -23,13 +23,33 @@ export default function GiftSection() {
           "
         >
           GIFT
-        </h2>
+        </h2> */}
+         <div className="max-w-6xl mx-auto">
+        {/* Heading */}
+        <div className="text-center mb-12">
+          <p
+            data-aos="fade-up"
+            className="text-red-500 tracking-[0.3em] text-sm mb-2 font-playfair"
+          >
+            WEDDING SPECIAL
+          </p>
+
+          <h2
+            data-aos="zoom-in"
+            className="font-netflix text-4xl sm:text-5xl md:text-6xl text-white"
+          >
+            GIFT
+          </h2>
+
+          <div className="w-24 h-1 bg-red-600 mx-auto mt-4 rounded-full" />
+        </div>
 
         {/* Container */}
         <div
           className="
             rounded-3xl
-            bg-white/90
+              bg-zinc-900
+              border border-zinc-800
             backdrop-blur-sm
             shadow-2xl
             p-6
@@ -59,7 +79,7 @@ export default function GiftSection() {
                 max-w-2xl
                 text-sm
                 md:text-base
-                text-stone-700
+               text-white
                 leading-7
                 italic
                 font-playfair

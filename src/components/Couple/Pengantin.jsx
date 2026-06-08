@@ -29,11 +29,33 @@ function Pengantin() {
       id="pengantin"
       className="bg-black text-white py-12 px-4 sm:px-6 lg:px-8"
     >
-      <div className="max-w-6xl mx-auto">
+      {/* <div className="max-w-6xl mx-auto"> */}
         {/* Heading */}
-        <h2  data-aos="zoom-in" className="text-5xl md:text-5xl font-bold mb-10 font-netflix" >
+        {/* <h2  data-aos="zoom-in" className="text-5xl md:text-5xl font-bold mb-10 font-netflix" >
           COUPLE
-        </h2>
+        </h2> */}
+
+         <div className="mx-auto max-w-6xl">
+        
+        
+        {/* Heading */}
+       <div className="text-center mb-12">
+          <p
+            data-aos="fade-up"
+            className="text-red-500 tracking-[0.3em] text-sm mb-2 font-playfair"
+          >
+            STARRING
+          </p>
+
+          <h2
+            data-aos="zoom-in"
+            className="font-netflix text-4xl sm:text-5xl md:text-6xl text-white"
+          >
+            COUPLE
+          </h2>
+
+          <div className="w-24 h-1 bg-red-600 mx-auto mt-4 rounded-full" />
+        </div>
 
         {/* Cards */}
         <div className="grid grid-cols-2 gap-4 md:gap-8">

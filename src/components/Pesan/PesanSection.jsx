@@ -32,9 +32,27 @@ function PesanSection() {
       "
     >
          <div className="mx-auto max-w-6xl">
-      <h2  data-aos="zoom-in" className="text-5xl md:text-5xl font-bold mb-10 font-netflix text-white" >
+      {/* <h2  data-aos="zoom-in" className="text-5xl md:text-5xl font-bold mb-10 font-netflix text-white" >
          RSVP
-        </h2>
+        </h2> */}
+         {/* Heading */}
+        <div className="text-center mb-12">
+          <p
+            data-aos="fade-up"
+            className="text-red-500 tracking-[0.3em] text-sm mb-2 font-playfair"
+          >
+            YOUR RESPONSE
+          </p>
+
+          <h2
+            data-aos="zoom-in"
+            className="font-netflix text-4xl sm:text-5xl md:text-6xl text-white"
+          >
+            RSVP
+          </h2>
+
+          <div className="w-24 h-1 bg-red-600 mx-auto mt-4 rounded-full" />
+        </div>
       <div
         className="
           mx-auto

@@ -58,12 +58,31 @@ export default function HariH() {
       <div className="mx-auto max-w-6xl">
         
         
-        <h2
+        {/* Heading */}
+        <div className="text-center mb-12">
+          <p
+            data-aos="fade-up"
+            className="text-red-500 tracking-[0.3em] text-sm mb-2 font-playfair"
+          >
+            FEATURED MOMENTS
+          </p>
+
+          <h2
+            data-aos="zoom-in"
+            className="font-netflix text-4xl sm:text-5xl md:text-6xl"
+          >
+            STORY
+          </h2>
+
+          <div className="w-24 h-1 bg-red-600 mx-auto mt-4 rounded-full" />
+        </div>
+        
+        {/* <h2
           data-aos="zoom-in"
           className="mb-10 text-5xl font-bold font-netflix"
         >
           LIVE STORY
-        </h2>
+        </h2> */}
 
         <div
           className="

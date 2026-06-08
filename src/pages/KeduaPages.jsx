@@ -10,6 +10,7 @@ import Lagu from "../assets/Musik/lagu.mp3"
 import { Volume2, VolumeX } from "lucide-react";
 import GiftSection from "../components/Gift/GiftSection";
 import Footer from "../components/Footer";
+import TurutMengundang from "../components/Mengundang/TurutMengundang";
 
 
 
@@ -41,6 +42,7 @@ useEffect(() => {
       <Gallery/>
       <PesanSection />
       <GiftSection/>
+      <TurutMengundang/>
 
       <Footer/>
   

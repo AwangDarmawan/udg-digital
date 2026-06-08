@@ -47,11 +47,11 @@ function Pertama() {
 
           {/* Guest */}
           <div className="text-center mt-12 md:mt-16">
-            <p className="text-zinc-400 text-md sm:text-base">
+            <p className="text-zinc-400 text-md sm:text-base font-playfair">
               Kepada Yth.
             </p>
 
-            <h3 data-aos="fade-down" className="text-red-600 font-bold text-2xl sm:text-3xl md:text-4xl">
+            <h3 data-aos="fade-down" className="text-red-600 font-bold text-2xl sm:text-3xl md:text-4xl font-netflix">
               {nama}
             </h3>
           </div>
