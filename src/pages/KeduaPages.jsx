@@ -1,5 +1,5 @@
 import HeroWedding from "../components/Awal/HeroWedding";
-import Navigation from "../components/Navigation";
+import NavbarTamu from "../components/Navbar/NavbarTamu";
 import Pengantin from "../components/Couple/Pengantin";
 import HariH from "../components/Story1/HariH";
 import AkadSection from "../components/Akad/AkadSection";
@@ -19,6 +19,8 @@ import TurutMengundang from "../components/Mengundang/TurutMengundang";
 export default function KeduaPages() {
       const audioRef = useRef(null);
 const [isPlaying, setIsPlaying] = useState(false);
+// state swipe all
+// const [scrollDirection, setScrollDirection] = useState("down");
 
 
 useEffect(() => {
@@ -30,11 +32,46 @@ useEffect(() => {
     }).catch(() => {});
   }
 }, []);
+
+
+// swipe all
+// useEffect(() => {
+//   const handleScroll = () => {
+//     const scrollTop = window.scrollY;
+//     const documentHeight =
+//       document.documentElement.scrollHeight - window.innerHeight;
+
+//     if (scrollTop > documentHeight * 0.5) {
+//       setScrollDirection("up");
+//     } else {
+//       setScrollDirection("down");
+//     }
+//   };
+
+//   window.addEventListener("scroll", handleScroll);
+
+//   return () => window.removeEventListener("scroll", handleScroll);
+// }, []);
+
+// const handleScrollPage = () => {
+//   if (scrollDirection === "down") {
+//     window.scrollTo({
+//       top: document.documentElement.scrollHeight,
+//       behavior: "smooth",
+//     });
+//   } else {
+//     window.scrollTo({
+//       top: 0,
+//       behavior: "smooth",
+//     });
+//   }
+// };
+
   return (
     <>
       <HeroWedding/>
       {/* <Waktu/> */}
-      <Navigation/>
+      <NavbarTamu/>
       <Pengantin/>
       <HariH/>
       <AkadSection/>
@@ -46,6 +83,41 @@ useEffect(() => {
 
       <Footer/>
   
+  {/* BUTTON SWIPE */}
+{/* <button
+  onClick={handleScrollPage}
+  className="
+    fixed
+    bottom-20
+    right-5
+    z-50
+
+    w-12
+    h-12
+
+    rounded-full
+    bg-white
+    text-red-600
+
+    border
+    border-red-600
+
+    flex
+    items-center
+    justify-center
+
+    shadow-lg
+    transition-all
+    duration-300
+    hover:scale-110
+  "
+>
+  {scrollDirection === "down" ? (
+    <ChevronDown size={24} />
+  ) : (
+    <ChevronUp size={24} />
+  )}
+</button> */}
     <button
   onClick={() => {
     if (audioRef.current.paused) {
@@ -56,24 +128,7 @@ useEffect(() => {
       setIsPlaying(false);
     }
   }}
-  // className="
-  //   fixed
-  //   bottom-5
-  //   right-5
-  //   z-50
-  //   w-12
-  //   h-12
-  //   rounded-full
-   
-  //   border
-  //  border-red-600 
-  //  bg-red-600
-  //   text-white
-  //   flex
-  //   items-center
-  //   justify-center
-  //    shadow-[0_4px_15px_rgba(62,92,147,0.5)]
-  // "
+  
 
 
   

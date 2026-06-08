@@ -3,11 +3,16 @@ import PesanCard from "./PesanCard";
 
 import Poto1 from "../../assets/1.png";
 import { useEffect, useState } from "react";
-import { GetPesan } from "../../services/Api";
+import {  GetPesan } from "../../services/Api";
+// import { toast } from "react-toastify";
 
 
 function PesanSection() {
     const [datas, setDatas] = useState([]);
+
+  
+
+  
  
   async function fetchPesan() {
     try {
@@ -24,6 +29,10 @@ function PesanSection() {
    useEffect(() => {
     fetchPesan();
   }, []);
+
+
+
+ 
   return (
     <section
     id="rsvp"
@@ -33,10 +42,6 @@ function PesanSection() {
       "
     >
          <div className="mx-auto max-w-6xl">
-      {/* <h2  data-aos="zoom-in" className="text-5xl md:text-5xl font-bold mb-10 font-netflix text-white" >
-         RSVP
-        </h2> */}
-         {/* Heading */}
         <div className="text-center mb-12">
           <p
             data-aos="fade-up"
@@ -123,7 +128,7 @@ function PesanSection() {
             {datas.length} Komentar
           </p>
 
-          <PesanForm />
+          <PesanForm PropfetchPesan={fetchPesan} />
 
           <div
             className="

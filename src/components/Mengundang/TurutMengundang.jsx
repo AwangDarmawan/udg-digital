@@ -107,7 +107,24 @@ function TurutMengundang() {
           data-aos="fade-up"
           className="text-center mt-12"
         >
-          <p className="text-zinc-400 text-sm sm:text-base font-playfair uppercase font-bold">
+          <p className="
+              text-white
+    font-netflix
+    uppercase
+    font-bold
+
+    text-xs
+    sm:text-sm
+    md:text-base
+    lg:text-lg
+    xl:text-xl
+
+    text-center
+    tracking-wide
+    leading-relaxed
+    max-w-3xl
+    mx-auto
+">
             Beserta seluruh keluarga besar yang turut berbahagia
             atas pernikahan kami.
           </p>

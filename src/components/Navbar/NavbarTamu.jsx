@@ -9,7 +9,7 @@ import {
   Home,
 } from "lucide-react";
 
-function Navigation() {
+function NavbarTamu() {
   const menus = [
     {
       label: "Home",
@@ -90,6 +90,7 @@ function Navigation() {
                   sm:text-xs
                   md:text-sm
                   font-medium
+                  font-netflix
                 "
               >
                 {menu.label}
@@ -102,4 +103,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default NavbarTamu;

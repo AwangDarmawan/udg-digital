@@ -1,0 +1,65 @@
+import PropTypes from "prop-types";
+
+const Form = ({ name, setName, handleSubmit }) => (
+  <div className="max-w-3xl w-full bg-white shadow-md rounded-xl p-6">
+    <h2 className="text-2xl font-bold text-red-600 text-center mb-6 font-Montserrat" data-aos="fade-up">
+      Tambahkan undangan
+    </h2>
+
+    <form className="space-y-4" onSubmit={handleSubmit}>
+      <div>
+        <label
+          htmlFor="name"
+          className="block text-sm  font-serif font-semibold  text-[#37558D] mb-2"
+        >
+          *Name
+        </label>
+
+        <input
+          type="text"
+          id="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Nama Undangan"
+          required
+          className="
+            w-full
+            px-4
+            py-2
+            border
+            rounded-lg
+            focus:ring-2
+            outline-none
+          text-[#3E5C93]
+            font-Montserrat
+          "
+        />
+      </div>
+
+      <button
+        type="submit"
+        className="
+          w-full
+          bg-red-600
+          text-white
+          py-2
+          px-4
+          rounded-lg
+          hover:bg-red-700
+          transition
+          font-semibold
+        "
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+);
+
+Form.propTypes = {
+  name: PropTypes.string.isRequired,
+  setName: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+};
+
+export default Form;

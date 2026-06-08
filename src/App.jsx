@@ -11,6 +11,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import KeduaPages from "./pages/KeduaPages";
 import PertamaPages from "./pages/PertamaPages";
 import IntroVideo from "./components/IntroVd/IntroVideo";
+import Adminpage from "./pages/AdminPage";
+import PesanAdminPage from "./pages/PesanAdminPage";
 function App() {
   
 
@@ -18,6 +20,10 @@ function App() {
     <>
        <BrowserRouter>
         <Routes>
+
+           {/* Admin */}
+        <Route path="/" element={<Adminpage/>} />
+           <Route path="/admin/pesan" element={<PesanAdminPage/>} />
           
           <Route path="/" element={<PertamaPages />} />
             <Route path="/:nama" element={<PertamaPages/>} />
