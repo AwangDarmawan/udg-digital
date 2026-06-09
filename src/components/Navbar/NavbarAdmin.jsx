@@ -1,100 +1,69 @@
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import {
+  LayoutDashboard,
+  MessageSquare,
+} from "lucide-react";
 
 function NavbarAdmin() {
-  const [isOpen, setIsOpen] = useState(false);
-
   const menus = [
     {
-      name: "Dashboard",
+      label: "Dashboard",
       href: "/",
+      icon: (
+        <LayoutDashboard className="w-5 h-5 sm:w-6 sm:h-6" />
+      ),
     },
     {
-      name: "Pesan",
+      label: "Pesan",
       href: "/admin/pesan",
+      icon: (
+        <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6" />
+      ),
     },
   ];
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <h1 className="text-xl font-bold text-red-600">
-            Admin Wedding
-          </h1>
+    <div className="w-full px-2 py-6 bg-black sticky top-0 z-50">
+      <div className="max-w-md mx-auto">
+        <div className="grid grid-cols-2 gap-3">
+          {menus.map((menu) => (
+            <a
+              key={menu.href}
+              href={menu.href}
+              className="
+                flex
+                items-center
+                justify-center
+                gap-2
+                rounded-xl
+                border
+                border-white/20
+                bg-red-600
+                text-white
+                p-3
+                transition-all
+                duration-300
+                hover:bg-red-700
+                hover:scale-105
+                shadow-lg
+              "
+            >
+              {menu.icon}
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-3">
-            {menus.map((menu) => (
-              <a
-                key={menu.name}
-                href={menu.href}
+              <span
                 className="
-                  px-4
-                  py-2
-                  rounded-lg
-                  text-white
-                  hover:bg-red-600
-                  hover:text-white
-                  transition
+                  text-xs
+                  sm:text-sm
+                  font-medium
+                  font-netflix
                 "
               >
-                {menu.name}
-              </a>
-            ))}
-          </div>
-
-          {/* Mobile Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden"
-          >
-            {isOpen ? (
-              <X size={24} />
-            ) : (
-              <Menu size={24} />
-            )}
-          </button>
-        </div>
-
-        {/* Mobile Menu */}
-        <div
-          className={`
-            md:hidden
-            overflow-hidden
-            transition-all
-            duration-300
-            ${
-              isOpen
-                ? "max-h-40 pb-4"
-                : "max-h-0"
-            }
-          `}
-        >
-          <div className="flex flex-col gap-2">
-            {menus.map((menu) => (
-              <a
-                key={menu.name}
-                href={menu.href}
-                className="
-                  px-4
-                  py-2
-                  rounded-lg
-                  text-white
-                  hover:bg-red-700
-                 bg-red-600
-                  transition
-                "
-                onClick={() => setIsOpen(false)}
-              >
-                {menu.name}
-              </a>
-            ))}
-          </div>
+                {menu.label}
+              </span>
+            </a>
+          ))}
         </div>
       </div>
-    </nav>
+    </div>
   );
 }
 
