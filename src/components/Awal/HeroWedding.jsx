@@ -39,18 +39,8 @@ export default function HeroWedding() {
           px-4
         "
       >
-        {/* Logo Nikahflix */}
-        {/* <img
-          src={NikahFlix}
-          alt="Nikahflix"
-          className="
-            w-32
-            sm:w-44
-            md:w-56
-            lg:w-72
-            xl:w-80
-          "
-        /> */}
+   
+        
         <LogoNikah/>
 
         {/* Judul */}
@@ -145,16 +135,7 @@ export default function HeroWedding() {
       >
         <div className="w-20 h-px bg-white/50 mx-auto mb-4" />
 
-        {/* <p
-          className="
-            text-sm
-            sm:text-base
-            md:text-lg
-            font-bold
-          "
-        >
-          Jl. Kp. Halimun RT 003 RW 004
-        </p> */}
+       
 
        <p 
        data-aos="flip-right"
