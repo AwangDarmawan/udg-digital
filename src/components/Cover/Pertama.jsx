@@ -51,7 +51,7 @@ function Pertama() {
               Kepada Yth.
             </p>
 
-            <h3 data-aos="fade-down" className="text-red-600 font-bold text-2xl sm:text-3xl md:text-4xl font-netflix">
+            <h3 data-aos="fade-down" className="text-red-600 font-bold text-2xl sm:text-3xl md:text-4xl font-netflix mt-2">
               {nama}
             </h3>
           </div>
