@@ -7,15 +7,13 @@ import "aos/dist/aos.css";
 import "@fontsource/bebas-neue";
 import "@fontsource/playfair-display";
 
-// AOS.init({
-//   duration: 1000,
-//   once: true,
-//     offset: 50,
-// });
+
+
 AOS.init({
-  duration: 1200,
+  duration: 1400,
   easing: "ease-out-cubic",
-  once: true,
+  once: false,
+  mirror: true,
   offset: 80,
 });
 

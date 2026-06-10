@@ -9,7 +9,7 @@ export default function IntroVideo() {
       <video
         autoPlay
         playsInline
-        muted
+        
         onEnded={() => navigate("/undangan")}
         className="
           w-full

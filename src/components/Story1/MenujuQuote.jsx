@@ -12,6 +12,7 @@ export default function MenujuQuote() {
     "
     >
       <p
+      data-aos="fade-down-left"
         className="
         text-sm
         leading-7
@@ -26,7 +27,7 @@ export default function MenujuQuote() {
         dan sayang."
       </p>
 
-      <p className="mt-4 text-right text-red-600 font-bold font-playfair">
+      <p  data-aos="fade-up-right"className="mt-4 text-right text-red-600 font-bold font-playfair ">
         (QS. Ar-Rum : 21)
       </p>
     </div>
