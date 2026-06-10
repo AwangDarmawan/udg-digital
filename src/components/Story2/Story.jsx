@@ -8,7 +8,7 @@ const Story = [
     id: 1,
     image: Poto1,
     title: "Episode 1",
-    title2: " Tunangan",
+    title2: " Pertemuan  ",
     date: "25 Desember 2022",
     description: "Meski hanya singkat, kami merasa saling tertarik dan ingin mengenal satu sama lain.",
   },
