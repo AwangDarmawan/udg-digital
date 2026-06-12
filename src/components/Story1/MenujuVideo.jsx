@@ -1,7 +1,7 @@
 
 
 import { useRef, useState } from "react";
-import vdpasangan from "../../assets/Musik/vdpasangan.mp4";
+import vdpasangan from "../../assets/Musik/VDSAADAH.mp4";
 
 export default function MenujuVideo() {
   const videoRef = useRef(null);

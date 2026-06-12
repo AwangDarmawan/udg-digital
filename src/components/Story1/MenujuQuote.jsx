@@ -1,3 +1,4 @@
+import { TypeAnimation } from "react-type-animation";
 export default function MenujuQuote() {
   return (
     <>
@@ -20,11 +21,26 @@ export default function MenujuQuote() {
         font-netflix
       "
       >
-        "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia
+        {/* "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia
         menciptakan pasangan-pasangan untukmu dari jenismu
         sendiri, agar kamu cenderung dan merasa tenteram
         kepadanya, dan Dia menjadikan di antaramu rasa kasih
-        dan sayang."
+        dan sayang." */}
+        <TypeAnimation
+    sequence={[
+       `Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia
+        menciptakan pasangan-pasangan untukmu dari jenismu
+        sendiri, agar kamu cenderung dan merasa tenteram
+        kepadanya, dan Dia menjadikan di antaramu rasa kasih
+        dan sayang.`,
+      2000,
+      "",
+      500,
+    ]}
+    speed={60}
+    deletionSpeed={60}
+    repeat={Infinity}
+  />
       </p>
 
       <p  data-aos="fade-up-right"className="mt-4 text-right text-red-600 font-bold font-playfair ">

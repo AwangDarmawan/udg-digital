@@ -43,7 +43,7 @@ export default function MenujuButton() {
       "
       >
         {/* < Heart /> */}
-        Bersama Selama 1 Tahun
+        Bersama Selama 5 Tahun
       </button>
     </div>
  

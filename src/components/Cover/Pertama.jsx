@@ -4,6 +4,7 @@ import {  useParams } from 'react-router-dom';
 import { useState } from "react";
 import { Mail, MailOpen } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { TypeAnimation } from "react-type-animation";
 
 function Pertama() {
    const navigate = useNavigate();
@@ -27,7 +28,22 @@ function Pertama() {
 
           {/* Title */}
           <h2 className="text-center text-lg sm:text-xl md:text-2xl text-zinc-200 mb-8 md:mb-12  font-playfair">
-            Who's watching?
+            
+           <TypeAnimation
+    sequence={[
+      "Siapa Yang Menonton?",
+      2000,
+      "Keluarga",
+      2000,
+      "Sahabat",
+      2000,
+      "Teman Kerja",
+      2000,
+    ]}
+    speed={60}
+    deletionSpeed={60}
+    repeat={Infinity}
+  />
           </h2>
 
           {/* Profiles */}

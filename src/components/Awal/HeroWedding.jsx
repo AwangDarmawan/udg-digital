@@ -99,7 +99,7 @@ export default function HeroWedding() {
     NDAH
   </h1>
 </div>
-        <span
+        {/* <span
         className="
           bg-red-600
           px-3 py-1
@@ -112,7 +112,7 @@ export default function HeroWedding() {
         "
       >
         Coming Soon
-      </span>
+      </span> */}
    
   </div>
   

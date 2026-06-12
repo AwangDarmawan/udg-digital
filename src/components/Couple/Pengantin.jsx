@@ -11,7 +11,8 @@ function Pengantin() {
       role: "Putra Ke-5",
       parent1: "Bpk H.Agus Samsuri (alm)",
       parent2: "& ibu Ii Mulyati",
-      instagram: "alpirahman",
+      instagram: "Alpi5315",
+      instagramLink: "https://instagram.com/alpi5315",
       image: pria,
     },
     {
@@ -19,7 +20,8 @@ function Pengantin() {
       role: "Putri Ke-3 ",
       parent1: "Bpk Asep Sulaeman",
       parent2: "& Ibu Ecin Kuraesin",
-      instagram: "ndah",
+      instagram: "Endah2516",
+        instagramLink: "https://www.instagram.com/endah2516/",
       image: wanita,
     },
   ];
@@ -99,7 +101,7 @@ function Pengantin() {
 
     {/* Instagram */}
     <a
-      href={`https://instagram.com/${person.instagram}`}
+     href={person.instagramLink}
       target="_blank"
       rel="noreferrer"
       className="
