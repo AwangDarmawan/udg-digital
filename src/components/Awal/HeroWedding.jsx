@@ -1,7 +1,7 @@
 
 import Berdua from "../../assets/PotoBerdua.png";
 // import NikahFlix from "../../assets/NikahFlix.png";
-
+import { TypeAnimation } from "react-type-animation";
 import LogoNikah from "../DataKhusus/LogoNikah";
 import Waktu from "./Waktu";
 
@@ -99,20 +99,7 @@ export default function HeroWedding() {
     NDAH
   </h1>
 </div>
-        {/* <span
-        className="
-          bg-red-600
-          px-3 py-1
-          sm:px-4 sm:py-2
-          text-xs sm:text-sm
-          rounded
-          text-white
-          font-netflix
-          
-        "
-      >
-        Coming Soon
-      </span> */}
+      
    
   </div>
   
@@ -153,7 +140,17 @@ export default function HeroWedding() {
     
   "
 >
-  05 Juli 2026
+       <TypeAnimation
+    sequence={[
+       ` 05 Juli 2026 `,
+      2000,
+      "",
+      500,
+    ]}
+    speed={60}
+    deletionSpeed={60}
+    repeat={Infinity}
+  />
 </p>
       </div>
 

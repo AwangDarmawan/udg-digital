@@ -36,7 +36,7 @@ function TurutMengundang() {
               rounded-3xl
               p-6
               sm:p-8
-              shadow-xl
+              shadow-[0_0_40px_rgba(220,38,38,0.15)]
             "
           >
             <p className="text-red-500 text-xs tracking-[0.3em] mb-2 font-playfair">
@@ -69,7 +69,8 @@ function TurutMengundang() {
               rounded-3xl
               p-6
               sm:p-8
-              shadow-xl
+             
+              shadow-[0_0_40px_rgba(220,38,38,0.15)]
             "
           >
             <p className="text-red-500 text-xs tracking-[0.3em] mb-2 font-playfair">
@@ -101,35 +102,101 @@ function TurutMengundang() {
             </div>
           </div>
         </div>
-
         {/* Closing */}
-        <div
-          data-aos="fade-up"
-          className="text-center mt-12"
-        >
-          <p className="
-              text-white
-    font-netflix
-    uppercase
-    font-bold
+<div
+  data-aos="zoom-in-up"
+  className="mt-12 flex justify-center px-2"
+>
+  <div
+    className="
+      relative
+      overflow-hidden
+      rounded-3xl
 
-    text-xs
-    sm:text-sm
-    md:text-base
-    lg:text-lg
-    xl:text-xl
+      w-full
+      max-w-xs
+      sm:max-w-lg
+      md:max-w-2xl
+      lg:max-w-3xl
 
-    text-center
-    tracking-wide
-    leading-relaxed
-    max-w-3xl
-    mx-auto
-">
-            Beserta seluruh keluarga besar yang turut berbahagia
-            atas pernikahan kami.
-          </p>
+      px-5
+      py-6
+      sm:px-8
+      sm:py-8
+      md:px-10
+      md:py-10
+
+      border border-white/10
+      bg-gradient-to-br
+       bg-zinc-900
+
+      backdrop-blur-md
+      shadow-[0_0_40px_rgba(220,38,38,0.15)]
+    "
+  >
+    {/* Glow */}
+    <div
+      className="
+        absolute
+        -top-20
+        left-1/2
+        -translate-x-1/2
+        w-56
+        h-56
+        bg-zinc-900
+              border border-zinc-800
+        blur-3xl
+        rounded-full
+      "
+    />
+
+    <p
+      className="
+        relative
+        z-10
+
+        font-netflix
+        uppercase
+        font-bold
+
+        text-white
+
+        text-sm
+        sm:text-base
+        md:text-lg
+        lg:text-xl
+        xl:text-2xl
+
+        leading-relaxed
+        tracking-[0.15em]
+
+        text-center
+      "
+    >
+      Beserta Seluruh Keluarga Besar
+      <br />
+      Yang Turut Berbahagia
+      <br />
+      Atas Pernikahan Kami
+    </p>
+
+    <div className="flex justify-center mt-5">
+      <div
+        className="
+          w-20
+          sm:w-24
+          h-[2px]
+           bg-zinc-900
+              border border-zinc-800
+        "
+      />
+    </div>
+  </div>
+</div>
+
+      
         </div>
-      </div>
+      
     </section>
   );
 }
