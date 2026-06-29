@@ -1,8 +1,8 @@
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+// import {  FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="relative my-10 mx-3 ">
+    <div className="relative my-2 mx-3 ">
       {/* Animated Border */}
   
 
@@ -20,11 +20,12 @@ function Footer() {
         
         "
       >
+        
          <h1 data-aos="fade-up-right" className="text-sm font-playfair font-semibold">
           Made By
         </h1>
-        <h1 data-aos="fade-down-left" className="text-sm font-playfair font-semibold">
-          Awang Darmawan
+        {/* <h1 data-aos="fade-down-left" className="text-sm font-playfair font-semibold">
+          4daDigital
         </h1>
 
         <a
@@ -47,7 +48,46 @@ function Footer() {
         >
           <FaInstagram className="text-2xl my-1" />
           @awng_drmwn
-        </a>
+        </a> */}
+
+        <h2 className="text-2xl sm:text-3xl font-bold tracking-wide mt-1 font-playfair">
+    4daDigital
+  </h2>
+  <p className="mt-3 text-sm sm:text-base font-semibold text-yellow-300 animate-pulse italic">
+    🎉 Promo spesial bulan ini! diskon 60% Lihat katalog template sekarang sebelum kehabisan.
+  </p>
+
+  <a
+    href="https://web-4dadigital.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      inline-flex
+      items-center
+      justify-center
+      mt-6
+      
+      py-3
+      rounded-full
+      bg-gradient-to-r
+      from-yellow-400
+      to-amber-500
+      text-white
+      font-semibold
+      hover:scale-105
+      transition-all
+      duration-300
+      shadow-xl
+      w-full
+      text-sm sm:text-base
+      font-playfair
+      
+      
+      
+    "
+  >
+    🌐 Lihat Semua Template
+  </a>
       </div>
     </div>
   );
