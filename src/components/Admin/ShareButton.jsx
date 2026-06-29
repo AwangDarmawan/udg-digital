@@ -65,9 +65,8 @@ import { toast } from "react-toastify";
 const ShareButton = ({ invitationLink, shareText }) => {
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(
-        `${shareText}\n\n${invitationLink}`
-      );
+    
+      await navigator.clipboard.writeText(shareText);
       toast.success("Link berhasil disalin 📋");
     } catch (err) {
         console.error(err);
@@ -80,9 +79,7 @@ const ShareButton = ({ invitationLink, shareText }) => {
     <div className="flex gap-4 mt-4">
       {/* WhatsApp */}
       <a
-        href={`https://api.whatsapp.com/send?text=${encodeForShare(
-          `${shareText}\n\n${invitationLink}`
-        )}`}
+        href={`https://api.whatsapp.com/send?text=${encodeForShare(shareText)}`}
         target="_blank"
         rel="noopener noreferrer"
         className="w-12 h-12 flex items-center justify-center rounded-full bg-green-500 hover:bg-green-600 shadow-lg transition-all duration-300"
@@ -105,8 +102,8 @@ const ShareButton = ({ invitationLink, shareText }) => {
       {/* Twitter */}
       <a
         href={`https://twitter.com/intent/tweet?text=${encodeForShare(
-          `${shareText}\n\n${invitationLink}`
-        )}`}
+  shareText
+)}`}
         target="_blank"
         rel="noopener noreferrer"
         className="w-12 h-12 flex items-center justify-center rounded-full bg-sky-500 hover:bg-sky-600 shadow-lg transition-all duration-300"
