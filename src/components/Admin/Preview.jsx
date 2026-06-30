@@ -4,7 +4,7 @@ import Sharebutton from "./ShareButton";
 const Preview = ({ submittedName, invitationLink, shareText }) => (
   <div className="max-w-3xl w-full mt-6 p-6 bg-gray-50 rounded-xl shadow-md">
     <p className="whitespace-pre-line leading-relaxed text-[#37558D] font-Montserrat">
-      Kepada Yth. <strong>{submittedName}</strong>
+      Tamu Undangan <strong>{submittedName}</strong>
 
       {"\n\n"}
 
